@@ -1,0 +1,5 @@
+{
+  "name": "Political World Game",
+  "description": "An interactive political simulation game played on a world map, allowing users to explore and interact with various political entities and scenarios.",
+  "requestFramePermissions": []
+}

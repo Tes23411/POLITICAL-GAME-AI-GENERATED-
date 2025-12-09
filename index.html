@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Political World Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <style>
+    /* Ensure the map container and its parents have full height */
+    html, body, #root {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent scrollbars */
+    }
+    /* Custom Leaflet Tooltip Styles */
+    .custom-tooltip {
+        background-color: rgba(17, 24, 39, 0.95) !important; /* Gray-900 */
+        color: white !important;
+        border: 1px solid #4b5563 !important; /* Gray-600 */
+        border-radius: 6px !important;
+        padding: 12px !important;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+        font-size: 14px !important;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3) !important;
+        white-space: normal !important;
+        max-width: 350px !important;
+        min-width: 220px !important;
+    }
+    .leaflet-tooltip-left:before, .leaflet-tooltip-right:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before {
+        border: none !important;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "leaflet": "https://aistudiocdn.com/leaflet@^1.9.4",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-leaflet": "https://aistudiocdn.com/react-leaflet@^5.0.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
